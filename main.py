@@ -50,6 +50,7 @@ def vix_impulse(vix):
 
 def signal_loop():
    send("BOT FUNCIONANDO 🚀")
+    
     while True:
         try:
             spy = get_data("SPY")
