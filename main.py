@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Bot activo best"
+    return "Bot activo best final"
 
 def send(msg):
     print("ENVIANDO MENSAJE A TELEGRAM:", msg)
