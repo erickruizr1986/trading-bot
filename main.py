@@ -86,7 +86,6 @@ def trend_5m_proxy(df):
 def signal_loop():
     global last_trade_time
     send("🎯 PRECISION BOT ACTIVO")
-    send("BOT VIVO Y MONITOREANDO 📡")
     
     while True:
         try:
