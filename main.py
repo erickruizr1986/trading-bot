@@ -49,7 +49,8 @@ def vix_impulse(vix):
     return (vix['close'].iloc[-1] - vix['close'].iloc[-10]) / vix['close'].iloc[-10] * 100
 
 def signal_loop():
-    send("BOT FUNCIONANDO 🚀") 
+    print("INICIANDO BOT...")  
+    send("BOT FUNCIONANDO 🚀")  
 
     while True:
         try:
