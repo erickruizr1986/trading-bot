@@ -20,8 +20,10 @@ def home():
     return "Bot activo 🚀"
 
 def send(msg):
+    print("ENVIANDO MENSAJE A TELEGRAM:", msg)
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-    requests.post(url, data={"chat_id": CHAT_ID, "text": msg})
+    r = requests.post(url, data={"chat_id": CHAT_ID, "text": msg})
+    print("RESPUESTA TELEGRAM:", r.text)
 
 def get_data(symbol):
     url = f"https://api.polygon.io/v2/aggs/ticker/{symbol}/range/1/minute/2025-01-01/2026-12-31?apiKey={API_KEY}"
