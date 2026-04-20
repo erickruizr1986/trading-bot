@@ -123,7 +123,7 @@ def signal(spy, vix):
     return None, sc
 
 # ================= LOOP =================
-
+send("BOT ACTIVO 🚀")
 while True:
     try:
         spy = get_data("SPY")
