@@ -1,5 +1,2 @@
-pandas
-requests
-ta
 flask
-gunicorn
+requests
