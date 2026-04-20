@@ -2,8 +2,8 @@ import requests
 from flask import Flask
 import threading
 
-TELEGRAM_TOKEN = "TU_TOKEN"
-CHAT_ID = "TU_CHAT_ID"
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+CHAT_ID = os.environ.get("CHAT_ID")
 
 app = Flask(__name__)
 
